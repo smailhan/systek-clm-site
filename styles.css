@@ -202,10 +202,14 @@ h1, h2, h3 { font-family: var(--baslik); letter-spacing: -.01em; }
 .alt-telif { border-top: 1px solid var(--gri-koyu); padding-top: 16px; font-size: 11px; color: var(--soluk); display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
 
 /* İç sayfa */
-.ic-kahraman { height: 380px; border-radius: var(--kose); overflow: hidden; position: relative; display: flex; align-items: flex-end; color: #fff; }
-.ic-kahraman img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: left top; filter: grayscale(1) contrast(1.05); }
-.ic-kahraman::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(30, 36, 48, .15), rgba(30, 36, 48, .75)); }
-.ic-kahraman h1 { position: relative; z-index: 2; font-size: 38px; font-weight: 600; padding: 0 0 40px 40px; }
+.ic-kahraman { height: 380px; border-radius: var(--kose); overflow: hidden; position: relative; display: flex; align-items: flex-end; color: #fff;
+  background-color: #2C5FB4;
+  background-image:
+    linear-gradient(90deg, rgba(18, 44, 100, .92) 0%, rgba(30, 72, 150, .78) 34%, rgba(47, 107, 203, .3) 64%, rgba(47, 107, 203, .06) 100%),
+    linear-gradient(0deg, rgba(14, 34, 80, .5) 0%, rgba(14, 34, 80, 0) 50%),
+    url("assets/sozlesme.webp");
+  background-size: auto, auto, cover; background-position: center, center, 70% 40%; }
+.ic-kahraman h1 { position: relative; font-size: 38px; font-weight: 600; padding: 0 0 40px 40px; }
 .yol-izi { font-size: 12px; color: var(--soluk); margin: 18px 0 14px; }
 .yol-izi a { color: var(--mavi); }
 .ic-ikili { grid-template-columns: 1.2fr 1fr; }
@@ -220,7 +224,20 @@ h1, h2, h3 { font-family: var(--baslik); letter-spacing: -.01em; }
 .ekran-kutu img { margin: 0 auto; border-radius: var(--kose); box-shadow: 0 18px 40px rgba(29, 36, 48, .14); border: 1px solid var(--gri-koyu); }
 .ekran-kutu figcaption { font-size: 11.5px; color: var(--soluk); margin-top: 14px; }
 .diger { grid-template-columns: repeat(3, 1fr); }
-.diger .gorsel-kutu { height: 150px; }
+.diger .gorsel-kutu { height: 170px; }
+/* İç sayfa "Diğer özellikler": her kutu, ana sayfadaki dört parçalı fotoğrafta o özelliğin parçasını gösterir. */
+.bolum { background-color: #9DB6DA; background-repeat: no-repeat;
+  background-image: linear-gradient(0deg, rgba(20, 52, 118, .78) 0%, rgba(30, 72, 150, .22) 50%, rgba(47, 107, 203, .12) 100%),
+    url("assets/financial-advisor-showing-payments-plan-to-young-YGMHTFM-scaled.jpg");
+  background-size: auto, 200% auto; }
+.bolum::after { display: none; }
+.bolum.p1 { background-position: 0 0, 0% 34%; }
+.bolum.p2 { background-position: 0 0, 100% 12%; }
+.bolum.p3 { background-position: 0 0, 0% 78%; }
+.bolum.p4 { background-position: 0 0, 100% 78%; }
+.bolum span, .bolum .ok { text-shadow: 0 1px 8px rgba(10, 30, 70, .35); }
+.bolum:hover { filter: brightness(1.06); }
+
 
 /* Duyarlı */
 @media (max-width: 1024px) {
@@ -252,7 +269,7 @@ h1, h2, h3 { font-family: var(--baslik); letter-spacing: -.01em; }
   .logolar div:last-child { grid-column: 1 / -1; }
   .alt-ust { grid-template-columns: 1fr 1fr; }
   .alt-ust > div:first-child { grid-column: 1 / -1; }
-  .ic-kahraman { height: 280px; }
+  .ic-kahraman { height: 280px; background-image: linear-gradient(0deg, rgba(14, 34, 80, .9) 0%, rgba(20, 50, 110, .65) 55%, rgba(47, 107, 203, .2) 100%), linear-gradient(0deg, transparent, transparent), url("assets/sozlesme.webp"); background-position: center, center, 78% center; }
   .ic-kahraman h1 { font-size: 28px; padding: 0 0 28px 24px; }
 }
 @media (max-width: 520px) {
