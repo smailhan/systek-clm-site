@@ -102,6 +102,22 @@ h1, h2, h3 { font-family: var(--baslik); letter-spacing: -.01em; }
 .gorsel-kutu span { position: absolute; z-index: 2; left: 22px; bottom: 18px; font-family: var(--baslik); font-weight: 700; font-size: 17px; letter-spacing: .02em; text-transform: uppercase; }
 .gorsel-kutu .ok { position: absolute; z-index: 2; right: 18px; bottom: 18px; width: 22px; height: 22px; }
 
+/* Tek fotoğraf, dört parça: her kutu fotoğrafın kendi konumundaki bölümünü gösterir (konteyner birimleriyle "cover"). */
+.dortlu { container-type: inline-size; --h: 280px; --g: var(--bosluk); --oran: 1.5677;
+  --H: calc(var(--h) * 2 + var(--g)); --iw: max(100cqw, calc(var(--H) * var(--oran))); --ih: calc(var(--iw) / var(--oran));
+  --ox: calc((100cqw - var(--iw)) * .5); --oy: calc((var(--H) - var(--ih)) * .14); }
+.parca { height: var(--h); background-color: #9DB6DA; background-repeat: no-repeat;
+  background-image: linear-gradient(0deg, rgba(20, 52, 118, .78) 0%, rgba(30, 72, 150, .22) 45%, rgba(47, 107, 203, .12) 100%),
+    url("assets/financial-advisor-showing-payments-plan-to-young-YGMHTFM-scaled.jpg");
+  background-size: auto, var(--iw) var(--ih); }
+.parca::after { display: none; }
+.parca.p1 { background-position: 0 0, var(--ox) var(--oy); }
+.parca.p2 { background-position: 0 0, calc(var(--ox) - 50cqw - var(--g) / 2) var(--oy); }
+.parca.p3 { background-position: 0 0, var(--ox) calc(var(--oy) - var(--h) - var(--g)); }
+.parca.p4 { background-position: 0 0, calc(var(--ox) - 50cqw - var(--g) / 2) calc(var(--oy) - var(--h) - var(--g)); }
+.parca span, .parca .ok { text-shadow: 0 1px 8px rgba(10, 30, 70, .35); }
+.parca:hover { filter: brightness(1.06); }
+
 /* Özellikler (teknoloji yığını düzeni) */
 .ozellikler { grid-template-columns: .8fr 2.4fr; }
 .ozellikler .acik { display: flex; flex-direction: column; justify-content: center; padding: 40px; }
@@ -222,7 +238,10 @@ h1, h2, h3 { font-family: var(--baslik); letter-spacing: -.01em; }
   .kahraman-ic { padding: 0 24px 40px; }
   .kahraman-yan { display: none; }
   .kahraman h1 { font-size: 30px; }
-  .hakkinda, .uclu, .dortlu, .iletisim, .ic-ikili, .diger { grid-template-columns: 1fr; }
+  .hakkinda, .uclu, .iletisim, .ic-ikili, .diger { grid-template-columns: 1fr; }
+  .dortlu { --h: 170px; }
+  .gorsel-kutu.parca span { font-size: 14px; left: 14px; bottom: 12px; }
+  .gorsel-kutu.parca .ok { right: 12px; bottom: 12px; }
   .hakkinda .gri, .kimler, .ne-yapar, .form, .ic-ikili .gri { padding: 28px 22px; }
   .sayilar { padding: 28px 22px; }
   .sayi.dev { font-size: 84px; }
@@ -244,4 +263,6 @@ h1, h2, h3 { font-family: var(--baslik); letter-spacing: -.01em; }
   .beyaz-kart, .kontrol ul { grid-template-columns: 1fr; }
   .bilgi { grid-template-columns: 1fr; }
   .gorsel-kutu { height: 180px; }
+  .dortlu { --h: 130px; }
+  .gorsel-kutu.parca { height: var(--h); }
 }
