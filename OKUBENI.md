@@ -23,3 +23,7 @@ Sunucu olmadığı için form, ziyaretçinin e-posta programında doldurulmuş b
 ## Not
 - Ekran görüntülerinde yalnız kurgusal kişiler ve şirketler var; gerçek çalışan adı yok.
 - Şablondaki müşteri yorumları, iş ortağı logoları ve vaka çalışmaları için gerçek veri olmadığından bunların yerine başlangıç adımları, birlikte çalışılan araçlar ve uygulama ekranlarından örnekler konuldu.
+
+## Konsept notu
+- Bu site yayına alınmayacak; ekip içi konsept tasarımdır. Ad ve logo kurumsal kimlik çalışmasından sonra değişecek.
+- `assets/logo-gecici.png` geçici yer tutucudur: bir tasarım pazarında satışta olan, bize ait olmayan bir logodan alınmıştır. Kullanım hakkı yoktur; kurumsal logo hazır olunca kaldırılacaktır.
