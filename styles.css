@@ -80,6 +80,29 @@ h1, h2, h3 { font-family: var(--baslik); letter-spacing: -.01em; }
 .sayi.dev { font-size: 104px; margin-top: 14px; }
 .sayi-alt { font-size: 11.5px; color: #D6E4FA; margin-top: 6px; }
 
+/* Word ile çalışır */
+.word { display: grid; grid-template-columns: 1fr 1.05fr; gap: 56px; align-items: center; padding: 48px; }
+.word .baslik-buyuk { margin-bottom: 14px; }
+.isaretli { list-style: none; display: grid; gap: 10px; margin-top: 22px; }
+.isaretli li { font-size: 14px; color: #36405A; display: flex; gap: 12px; align-items: flex-start; line-height: 1.5; }
+.isaretli li::before { content: ''; flex: none; width: 20px; height: 20px; margin-top: 1px; border-radius: 50%;
+  background: var(--mavi) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6.5 12.5l3.5 3.5 7.5-8'/%3E%3C/svg%3E") center / 12px no-repeat; }
+.belge-cizim { background: var(--beyaz); border-radius: 8px; box-shadow: 0 24px 60px rgba(29, 54, 110, .18); overflow: hidden; font-size: 12.5px; }
+.belge-ust { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px 12px; padding: 12px 18px; background: #2B579A; color: #fff; }
+.belge-ad { display: flex; align-items: center; gap: 10px; font-weight: 600; white-space: nowrap; }
+.belge-ad b { width: 22px; height: 22px; border-radius: 4px; background: #fff; color: #2B579A; display: grid; place-items: center; font-size: 13px; }
+.belge-durum { font-size: 11px; background: rgba(255, 255, 255, .18); padding: 3px 10px; border-radius: 999px; white-space: nowrap; }
+.belge-govde { position: relative; padding: 26px 210px 22px 30px; color: #2C3240; line-height: 1.7; min-height: 250px; }
+.belge-govde p + p { margin-top: 8px; }
+.belge-baslik { font-weight: 700; font-size: 11.5px; letter-spacing: .02em; margin-top: 14px; }
+.belge-govde del { color: #C0263A; text-decoration: line-through; }
+.belge-govde ins { color: #138A52; text-decoration: underline; text-underline-offset: 2px; }
+.belge-yorum { position: absolute; right: 18px; top: 70px; width: 175px; background: #FFF8E1; border-left: 3px solid #E8B24A; border-radius: 4px; padding: 10px 12px; font-size: 11px; line-height: 1.5; color: #4A4A3A; box-shadow: 0 6px 16px rgba(0, 0, 0, .06); }
+.belge-yorum b { display: block; font-size: 11px; margin-bottom: 2px; color: #2C3240; }
+.belge-alt { display: flex; gap: 8px; flex-wrap: wrap; padding: 12px 18px; border-top: 1px solid var(--gri-koyu); background: #F7F9FC; }
+.belge-alt span { font-size: 11px; padding: 4px 10px; border-radius: 999px; background: var(--gri); color: var(--soluk); }
+.belge-alt .son { background: var(--mavi); color: #fff; font-weight: 600; }
+
 /* Değer kartları */
 .uclu { grid-template-columns: repeat(3, 1fr); }
 .deger { text-align: center; padding: 40px 30px; }
@@ -263,7 +286,10 @@ h1, h2, h3 { font-family: var(--baslik); letter-spacing: -.01em; }
   .hakkinda .gri, .kimler, .ne-yapar, .form, .ic-ikili .gri { padding: 28px 22px; }
   .sayilar { padding: 28px 22px; }
   .sayi.dev { font-size: 84px; }
-  .ne-yapar, .kimler, .form { grid-template-columns: 1fr; gap: 24px; }
+  .ne-yapar, .kimler, .form, .word { grid-template-columns: 1fr; gap: 24px; }
+  .word { padding: 28px 22px; }
+  .belge-govde { padding: 20px 18px; }
+  .belge-yorum { position: static; width: auto; margin-top: 14px; display: block; }
   .slayt { grid-template-columns: 1fr; }
   .kaydirici { padding: 22px; }
   .logolar { grid-template-columns: repeat(2, 1fr); }
