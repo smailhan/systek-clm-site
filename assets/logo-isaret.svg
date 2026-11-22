@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-label="Systek CLM">
+  <rect width="48" height="48" rx="12" fill="#2F6BCB"/>
+  <g fill="none" stroke="#FFFFFF" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M15 10.5h12.5l8 8V35a3.5 3.5 0 0 1-3.5 3.5H15a3.5 3.5 0 0 1-3.5-3.5V14a3.5 3.5 0 0 1 3.5-3.5z"/>
+    <path d="M27.5 10.5v5.5a2.5 2.5 0 0 0 2.5 2.5h5.5"/>
+    <path d="M17.5 27.5l4.2 4.2 8.3-9"/>
+  </g>
+</svg>
