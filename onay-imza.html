@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Onay ve imza — Systek CLM</title>
+<meta name="description" content="Systek CLM — Onay ve imza: Kim, hangi sırayla onaylar; onaylanan metin imzaya değişmeden gider.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@300;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="ust">
+  <div class="kap">
+    <a class="logo" href="index.html" aria-label="Systek CLM ana sayfa">systek<span>clm</span></a>
+    <button class="menu-dugme" type="button" aria-label="Menüyü aç" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+    <nav class="menu" id="menu" aria-label="Ana menü">
+      <a href="index.html#hakkinda">Hakkında</a>
+      <a href="index.html#ne-yapar">Ne yapar</a>
+      <a href="index.html#ozellikler">Özellikler</a>
+      <a href="index.html#urunden">Üründen</a>
+      <a href="index.html#nasil">Nasıl başlarız</a>
+      <a class="hap" href="#iletisim">Demo isteyin</a>
+    </nav>
+  </div>
+</header>
+
+<main class="kap">
+
+  <p class="yol-izi"><a href="index.html">Ana sayfa</a> / Onay ve imza</p>
+
+  <section class="izgara" aria-label="Başlık">
+    <div class="ic-kahraman"><img src="assets/onay.jpg" alt="" width="1600" height="1000"><h1>Onay ve imza</h1></div>
+  </section>
+
+  <section class="izgara ic-ikili">
+    <div class="kutu gri">
+      <span class="etiket">Onay ve imza</span>
+      <h2 class="baslik-buyuk">Kim, hangi sırayla onaylar; onaylanan metin imzaya değişmeden gider.</h2>
+      <div class="metin"><p>Her sözleşme türünün kendi onay akışı vardır. Tutar eşiğini geçen sözleşme ilgili adıma çıkar, eşiğin altındaki o adıma hiç uğramaz. Hazırlayanın birim yöneticisi kendiliğinden bulunur; izindeki onaycının yerine vekili karar verir.</p><p>Onaya giden versiyon donar: onay sürerken kimse metni değiştiremez. Değişiklik gerekirse akış durur, sözleşme müzakereye döner ve yeniden gönderilince onay baştan başlar. Ret gerekçe ister ve sözleşmeyi hazırlayana döndürür.</p><p>Onay tamamlanınca onaylanan versiyondan değişmez bir imza PDF'i üretilir. İmzalı belge yüklendiğinde sözleşme yürürlüğe girer ve süre takibi başlar.</p></div>
+    </div>
+    <div class="kontrol">
+      <h3>Onay ve imzada neler var</h3>
+      <ul><li>Türe göre onay akışı</li><li>Tutar eşiğine göre adım</li><li>Hazırlayanın birim yöneticisi</li><li>Vekâlet</li><li>Dondurulan onay metni</li><li>Bende bekleyenler listesi</li><li>Süre dolunca hatırlatma</li><li>Değişmez imza PDF'i</li></ul>
+    </div>
+  </section>
+
+  <section class="izgara">
+    <figure class="kutu gri ekran-kutu">
+      <img src="assets/imza.jpg" alt="İmza sekmesi: onaylanan versiyondan üretilen imza PDF'i ve imza yöntemi seçimi. Kurgusal veri." loading="lazy" width="1600" height="1000">
+      <figcaption>İmza sekmesi: onaylanan versiyondan üretilen imza PDF'i ve imza yöntemi seçimi. Kurgusal veri.</figcaption>
+    </figure>
+  </section>
+
+  <div class="bolum-baslik"><h2>Diğer özellikler</h2></div>
+  <section class="izgara diger" aria-label="Diğer özellikler"><a class="gorsel-kutu" href="muzakere.html"><img src="assets/kutu-muzakere.jpg" alt="" loading="lazy"><span>Hazırlık ve müzakere</span><svg class="ok" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7l10 10M17 9v8H9"/></svg></a><a class="gorsel-kutu" href="raporlar.html"><img src="assets/kutu-raporlar.jpg" alt="" loading="lazy"><span>Süre takibi ve raporlar</span><svg class="ok" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7l10 10M17 9v8H9"/></svg></a><a class="gorsel-kutu" href="yapay-zeka.html"><img src="assets/kutu-yz.jpg" alt="" loading="lazy"><span>Yapay zekâ ile analiz</span><svg class="ok" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7l10 10M17 9v8H9"/></svg></a></section>
+
+  <section class="izgara iletisim" id="iletisim">
+    <div class="kutu gri form">
+      <div>
+        <span class="etiket">Bize yazın</span>
+        <h2 class="baslik-buyuk">Demo isteyin,<br>size ulaşalım</h2>
+        <p class="metin">Formu doldurun; birkaç gerçek sözleşmeniz ve bir onay akışınızla çalışan bir deneme ortamı için sizinle iletişime geçelim.</p>
+      </div>
+      <form class="alanlar" id="iletisim-formu" data-alici="[e-posta]" novalidate>
+        <label><span>Ad soyad</span><input name="ad" type="text" placeholder="Ad soyad" autocomplete="name" required></label>
+        <label><span>E-posta</span><input name="eposta" type="email" placeholder="E-posta" autocomplete="email" required></label>
+        <label><span>Konu</span><input name="konu" type="text" placeholder="Konu"></label>
+        <label><span>Mesaj</span><textarea name="mesaj" rows="2" placeholder="Mesajınız"></textarea></label>
+        <label class="onay-kutu"><input name="kvkk" type="checkbox"> Kişisel verilerimin talebime dönüş yapılması amacıyla işlenmesine ilişkin aydınlatma metnini okudum.</label>
+        <p class="form-not" role="status"></p>
+        <div><button class="hap" type="submit">Gönder</button></div>
+      </form>
+    </div>
+    <div class="kutu mavi bilgi">
+      <div><b>E-posta</b><a href="mailto:[e-posta]">[e-posta]</a></div>
+      <div><b>Telefon</b><a href="tel:+902623414807">0262 341 48 07</a></div>
+      <div class="tam"><b>Adres</b>Systek Bilişim<br>Yeniköy Merkez Mah. Vatan Cad.<br>Teknopark Sitesi No: 83/A C26<br>Başiskele / Kocaeli</div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="alt">
+  <div class="kap">
+    <div class="alt-ust">
+      <div><a class="logo" href="index.html">systek<span>clm</span></a><p>Sözleşmenin bütün hayatı, tek yerde. Türkiye'deki kurumlar için.</p></div>
+      <div><h4>Ürün</h4><ul><li><a href="muzakere.html">Hazırlık ve müzakere</a></li><li><a href="onay-imza.html">Onay ve imza</a></li><li><a href="raporlar.html">Süre takibi ve raporlar</a></li><li><a href="yapay-zeka.html">Yapay zekâ</a></li></ul></div>
+      <div><h4>Kurumsal</h4><ul><li><a href="index.html#hakkinda">Hakkında</a></li><li><a href="index.html#nasil">Nasıl başlarız</a></li><li><a href="#">KVKK aydınlatma metni</a></li><li><a href="#">Kullanım koşulları</a></li></ul></div>
+      <div><h4>İletişim</h4><ul><li><a href="mailto:[e-posta]">[e-posta]</a></li><li><a href="tel:+902623414807">0262 341 48 07</a></li><li>Başiskele / Kocaeli</li></ul></div>
+    </div>
+    <div class="alt-telif"><span>© 2026 Systek Bilişim. Tüm hakları saklıdır.</span><span>Systek CLM</span></div>
+  </div>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>
